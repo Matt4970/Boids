@@ -13,7 +13,7 @@ private:
 	void initVariables();
 	void initWindow();
 
-	Bird birbs[100];
+	Bird birbs[50];
 	int numBirbs;
 
 public:

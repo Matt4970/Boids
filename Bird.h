@@ -6,7 +6,6 @@ class Bird
 {
 private:
 	float viewRadius;
-	float tooCloseF;
 	float FOV; // 270 degrees means the birb can see everything but the 90 degrees directly behind him
 
 	void initVariables();
@@ -14,7 +13,6 @@ private:
 public:
 	sf::CircleShape body;
 	bool withinView;
-	bool tooClose;
 
 	float orientation;
 	sf::Vector2f velocity;
@@ -24,9 +22,9 @@ public:
 	Bird();
 
 	// Functions
-	sf::Vector2f separation(Bird birbs[10], int numBirbs);
-	sf::Vector2f alignment(Bird birbs[10], int numBirbs);
-	sf::Vector2f cohesion(Bird birbs[10], int numBirbs);
+	sf::Vector2f separation(Bird birbs[50], int numBirbs);
+	sf::Vector2f alignment(Bird birbs[50], int numBirbs);
+	sf::Vector2f cohesion(Bird birbs[50], int numBirbs);
 	sf::Vector2f remainInBounds();
 
 	void inView(sf::Vector2f position);

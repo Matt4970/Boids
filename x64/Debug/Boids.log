@@ -1,15 +1,4 @@
-﻿  Bird.cpp
-D:\Code\C++\Boids\Boids\Bird.cpp(9,18): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-D:\Code\C++\Boids\Boids\Bird.cpp(11,65): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-D:\Code\C++\Boids\Boids\Bird.cpp(11,46): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-D:\Code\C++\Boids\Boids\Bird.cpp(107,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-D:\Code\C++\Boids\Boids\Bird.cpp(138,80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+﻿  Simulation.cpp
+  main.cpp
+  Generating Code...
   Boids.vcxproj -> D:\Code\C++\Boids\Boids\x64\Debug\Boids.exe

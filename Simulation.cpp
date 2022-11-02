@@ -6,13 +6,14 @@
 void Simulation::initVariables()
 {
 	this->videoMode = sf::VideoMode(1600, 900);
-	this->numBirbs = 10;
+	this->numBirbs = 50;
 	for (int i = 0; i < numBirbs; i++)
 	{
 		Bird birb;
 		this->birbs[i] = birb;
 	}
-	this->birbs[0].body.setFillColor(sf::Color(200, 0, 0));
+	// this->birbs[0].body.setFillColor(sf::Color(200, 0, 0));
+	// this->birbs[0].velocity = sf::Vector2f(0.f, 0.f);
 }
 
 void Simulation::initWindow()
@@ -59,11 +60,7 @@ void Simulation::update()
 	pollEvents();
 	for (int i = 0; i < this->numBirbs; i++) this->birbs[i].update(sf::Mouse::getPosition(*this->window), this->birbs, this->numBirbs);
 
-	this->birbs[0].inView(sf::Vector2f(sf::Mouse::getPosition(*this->window)));
-	if (this->birbs[0].withinView)
-	{
-		// std::cout << "Working!\n";
-	}
+	// this->birbs[0].inView(sf::Vector2f(sf::Mouse::getPosition(*this->window)));
 }
 
 void Simulation::render()
